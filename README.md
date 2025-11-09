@@ -25,9 +25,9 @@ Clone the github repository and enter xNNDriver-and-xAEDriver directory with
 However, the folder `xNNDriver-and-xAEDriver/dataset` is stored in Google Drive because of the file size limitations of GitHub. Please download the folder via https://drive.google.com/drive/folders/1CWI-P40QcIpNmYxleX5y-6KvhfznYadg?usp=sharing. Thank you! 
 
 ## Usage
-Executing `code/gene/main.py` evaluates the supervised models (xNNDriver), providing driver potential scores along with identifying important pathways. Users need to specify the input gene list and the output file name for the fitness results of all genes. Similarly, executing `code/mutation/main.py` (xAEDriver) generates DVRs and calculates the relevance scores of pathways, averaged across all cell lines. Users should specify the output file name for the DVRs and pathways.
+Executing `code/xNNDriver/main.py` evaluates the supervised models (xNNDriver), providing driver potential scores along with identifying important pathways. Users need to specify the input gene list and the output file name for the fitness results of all genes. Similarly, executing `code/xAEDriver/main.py` (for xAEDriver) generates DVRs and calculates the relevance scores of pathways, averaged across all cell lines. Users should specify the output file name for the DVRs and pathways.
 
-The list below is the options for `code/gene/main.py`.
+The list below is the options for `code/xNNDriver/main.py`.
 
 
     --input_gene                    path to the input CSV file containing the list of genes (required)
@@ -43,10 +43,10 @@ The list below is the options for `code/gene/main.py`.
 
 Here is an example.
 
-    $ python code/gene/main.py  --input_gene "../../dataset/InputGene/3008Gene.csv"\
-                                --output_performance "output_performance.csv"\
+    $ python code/xNNDriver/main.py  --input_gene "../../dataset/InputGene/3008Gene.csv"\
+                                     --output_performance "output_performance.csv"\
 
-The list below is the options for `code/mutation/main.py`.
+The list below is the options for `code/xAEDriver/main.py`.
 
     --dvr_file_name                 path to save the output CSV file for generated DVRs (required)
     --pathway_file_name             path to save the output CSV file with pathway relevance scores (required)
@@ -61,5 +61,5 @@ The list below is the options for `code/mutation/main.py`.
 
 Here is an example.
 
-    $ python code/mutation/main.py  --fake_SNP_file_name "output_fake_SNP.csv"\
-                                    --pathway_file_name "output_pathway.csv"\
+    $ python code/xAEDriver/main.py  --fake_SNP_file_name "output_fake_SNP.csv"\
+                                     --pathway_file_name "output_pathway.csv"\
