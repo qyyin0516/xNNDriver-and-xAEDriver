@@ -42,9 +42,10 @@ The list below is the options for `code/xNNDriver/main.py`.
     --Dp_cutoff                     Dp cutoff for identifying important pathways (optional, default: 0.1)
 
 Here is an example.
-
-    $ python code/xNNDriver/main.py  --input_gene "../../dataset/InputGene/3008Gene.csv"\
-                                     --output_performance "output_performance.csv"\
+    
+    $ cd code/xNNDriver
+    $ python main.py  --input_gene "../../dataset/InputGene/3008Gene.csv"\
+                      --output_performance "output_performance.csv"\
 
 The list below is the options for `code/xAEDriver/main.py`.
 
@@ -61,5 +62,6 @@ The list below is the options for `code/xAEDriver/main.py`.
 
 Here is an example.
 
-    $ python code/xAEDriver/main.py  --fake_SNP_file_name "output_fake_SNP.csv"\
-                                     --pathway_file_name "output_pathway.csv"\
+    $ cd code/xAEDriver
+    $ python main.py  --fake_SNP_file_name "output_fake_SNP.csv"\
+                      --pathway_file_name "output_pathway.csv"\
