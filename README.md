@@ -17,12 +17,12 @@ The models are built with Python 3 (>= 3.10.16) with the following packages:
 * networkx >= 2.6.3
 
 ## Installation
-Clone the github repository and enter DepMap-analysis directory with
+Clone the github repository and enter xNNDriver-and-xAEDriver directory with
 
-    $ git clone https://github.com/qyyin0516/DepMap-analysis.git
-    $ cd DepMap-analysis
+    $ git clone https://github.com/qyyin0516/xNNDriver-and-xAEDriver.git
+    $ cd xNNDriver-and-xAEDriver
   
-However, the folder `DepMap-analysis/dataset` is stored in Google Drive because of the file size limitations of GitHub. Please download the folder via https://drive.google.com/drive/folders/1CWI-P40QcIpNmYxleX5y-6KvhfznYadg?usp=sharing. Thank you! 
+However, the folder `xNNDriver-and-xAEDriver/dataset` is stored in Google Drive because of the file size limitations of GitHub. Please download the folder via https://drive.google.com/drive/folders/1CWI-P40QcIpNmYxleX5y-6KvhfznYadg?usp=sharing. Thank you! 
 
 ## Usage
 Executing `code/gene/main.py` evaluates the supervised models (xNNDriver), providing driver potential scores along with identifying important pathways. Users need to specify the input gene list and the output file name for the fitness results of all genes. Similarly, executing `code/mutation/main.py` (xAEDriver) generates DVRs and calculates the relevance scores of pathways, averaged across all cell lines. Users should specify the output file name for the DVRs and pathways.
