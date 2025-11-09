@@ -63,5 +63,5 @@ The list below is the options for `code/xAEDriver/main.py`.
 Here is an example.
 
     $ cd code/xAEDriver
-    $ python main.py  --fake_SNP_file_name "output_fake_SNP.csv"\
+    $ python main.py  --dvr_file_name "output_fake_SNP.csv"\
                       --pathway_file_name "output_pathway.csv"\
