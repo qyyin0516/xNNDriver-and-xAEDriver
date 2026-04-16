@@ -22,7 +22,7 @@ Clone the github repository and enter xNNDriver-and-xAEDriver directory with
     $ git clone https://github.com/qyyin0516/xNNDriver-and-xAEDriver.git
     $ cd xNNDriver-and-xAEDriver
   
-However, the folder `xNNDriver-and-xAEDriver/dataset` is stored in Google Drive because of the file size limitations of GitHub. Please download the folder via https://drive.google.com/drive/folders/1CWI-P40QcIpNmYxleX5y-6KvhfznYadg?usp=sharing. Thank you! 
+However, the folder `xNNDriver-and-xAEDriver/dataset` is stored in Google Drive because of the file size limitations of GitHub. Please download the folder via https://drive.google.com/drive/folders/18jDtzlyvzkL1pbeW-OATXEPQcVyaobQJwDFMMZrdyADAptrb72FOJvnwGlj51SNOBt9pVS-z?usp=drive_link. Thank you! 
 
 ## Usage
 Executing `code/xNNDriver/main.py` evaluates the supervised models (xNNDriver), providing driver potential scores along with identifying important pathways. Users need to specify the input gene list and the output file name for the fitness results of all genes. Similarly, executing `code/xAEDriver/main.py` (for xAEDriver) generates DVRs and calculates the relevance scores of pathways, averaged across all cell lines. Users should specify the output file name for the DVRs and pathways.
