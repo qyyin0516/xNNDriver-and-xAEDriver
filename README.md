@@ -1,9 +1,8 @@
-# Explainable deep learning for identifying cancer driver genes based on the Cancer Dependency Map
+# Interpretable neural networks prioritize cancer driver genes and associated pathways from functional genomics data
 
 
-In this project, we utilized the Cancer Dependency Map (DepMap) to identify potential cancer driver genes and generate artificial representative driver variants. Using DepMap dependency score data, we developed a biologically informed, supervised deep learning model for each frequently mutated gene, leveraging functional SNPs to predict its mutation status. The fitness of the model represents how likely the gene is a cancer driver gene. To generate driver variant representations (DVRs), we built an explainable autoencoder, guided by the distribution of real driver SNPs. This allowed us to identify important pathways for the dependence profile of a cell line. 
+In this project, we developed two complementary neural network frameworks, xNNDriver and xAEDriver, to leverage genome-wide Cancer Dependency Map (DepMap) data for prioritizing candidate cancer driver genes and associated pathways. xNNDriver is a supervised, pathway-guided model that predicts a gene's mutation status based on its dependency perturbation signature, where the model's fitness serves as a driver potential score. To capture complex combinatorial functional states, we also built xAEDriver, an unsupervised autoencoder that learns Driver Variant Representations (DVRs). These latent binary features are guided by the frequency distribution of known driver mutations and capture cell-line-specific dependency and expression patterns.
 
-This project corresponds to the following paper: Yin, Q., Chen, L.. Explainable deep learning for identifying cancer driver genes based on the Cancer Dependency Map, bioRxiv. https://www.biorxiv.org/content/10.1101/2025.04.28.651122
 
 ## Dependencies
 The models are built with Python 3 (>= 3.10.16) with the following packages:
@@ -17,7 +16,7 @@ The models are built with Python 3 (>= 3.10.16) with the following packages:
 * networkx >= 2.6.3
 
 ## Installation
-Clone the github repository and enter xNNDriver-and-xAEDriver directory with
+Clone the github repository and enter `xNNDriver-and-xAEDriver` directory with
 
     $ git clone https://github.com/qyyin0516/xNNDriver-and-xAEDriver.git
     $ cd xNNDriver-and-xAEDriver
