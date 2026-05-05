@@ -15,7 +15,7 @@ The models are built with Python 3 (>= 3.10.16) with the following packages:
 * networkx >= 2.6.3
 
 ## Installation
-Clone the github repository and enter `xNNDriver-and-xAEDriver` directory with
+Clone the github repository and enter `xNNDriver-and-xAEDriver` directory with:
 
     $ git clone https://github.com/qyyin0516/xNNDriver-and-xAEDriver.git
     $ cd xNNDriver-and-xAEDriver
