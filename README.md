@@ -1,5 +1,4 @@
-# Interpretable neural networks prioritize cancer driver genes and associated pathways from functional genomics data
-
+# Interpretable neural networks prioritize cancer driver genes from genome-wide dependency landscapes
 
 In this project, we developed two complementary neural network frameworks, xNNDriver and xAEDriver, to leverage genome-wide Cancer Dependency Map (DepMap) data for prioritizing candidate cancer driver genes and associated pathways. xNNDriver is a supervised, pathway-guided model that predicts a gene's mutation status based on its dependency perturbation signature, where the model's fitness serves as a driver potential score. To capture complex combinatorial functional states, we also built xAEDriver, an unsupervised autoencoder that learns Driver Variant Representations (DVRs). These latent binary features are guided by the frequency distribution of known driver mutations and capture cell-line-specific dependency and expression patterns.
 
